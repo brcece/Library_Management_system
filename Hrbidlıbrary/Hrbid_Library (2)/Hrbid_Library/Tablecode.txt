@@ -1,0 +1,27 @@
+create table BooksList(
+id int  NOT NULL IDENTITY(1,1) primary key,
+bookname varchar(150)not null,
+author varchar(150)not null,
+tyype varchar(150)not null,
+numberofpages varchar(150)not null,
+timee varchar(150) not null
+)
+
+insert into BooksList(bookname,author,tyype,numberofpages,timee) values ('The Sun and Her Flowers','Rupi Kaur','Poem','256 pages','First Edition : 3.10.2017');
+
+select*from BooksList
+
+
+create table BorrowList(
+id int  NOT NULL IDENTITY(1,1) primary key,
+booknameid varchar(150)not null,
+bookname varchar(150)not null,
+userid varchar(150)not null,
+startedtime varchar(150)not null,
+endingtime
+varchar(150) not null
+)
+
+insert into BorrowList(booknameid,bookname,userid,startedtime,endingtime) values (1,"The Sun and Her Flowers",1,);
+
+select*from BorrowList

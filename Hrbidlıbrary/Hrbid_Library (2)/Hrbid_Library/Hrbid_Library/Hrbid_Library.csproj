@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8C94FD2-08D6-413F-94EA-1A4CA1AC922F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hrbid_Library</RootNamespace>
+    <AssemblyName>Hrbid_Library</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADDBOOKMYLIST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDBOOKMYLIST.Designer.cs">
+      <DependentUpon>ADDBOOKMYLIST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstock.Designer.cs">
+      <DependentUpon>addstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstudent.Designer.cs">
+      <DependentUpon>addstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow_Books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow_Books.Designer.cs">
+      <DependentUpon>Borrow_Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrow_time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrow_time.Designer.cs">
+      <DependentUpon>borrow_time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change pass.Designer.cs">
+      <DependentUpon>change pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardM.Designer.cs">
+      <DependentUpon>DashboardM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboradL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboradL.Designer.cs">
+      <DependentUpon>DashboradL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBook.Designer.cs">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editmyprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editmyprofile.Designer.cs">
+      <DependentUpon>Editmyprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extend_time_lıbrarıan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extend_time_lıbrarıan.Designer.cs">
+      <DependentUpon>Extend_time_lıbrarıan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="first page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="first page.Designer.cs">
+      <DependentUpon>first page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="history.Designer.cs">
+      <DependentUpon>history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN.Designer.cs">
+      <DependentUpon>LIBRARIAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myacountmanager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myacountmanager.Designer.cs">
+      <DependentUpon>myacountmanager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBorrowList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBorrowList.Designer.cs">
+      <DependentUpon>MyBorrowList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyreadingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyreadingList.Designer.cs">
+      <DependentUpon>MyreadingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySql.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBook.Designer.cs">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="send_mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="send_mail.Designer.cs">
+      <DependentUpon>send_mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingUp.Designer.cs">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userslib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userslib.Designer.cs">
+      <DependentUpon>userslib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usersstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usersstudent.Designer.cs">
+      <DependentUpon>usersstudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDBOOKMYLIST.resx">
+      <DependentUpon>ADDBOOKMYLIST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstock.resx">
+      <DependentUpon>addstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstudent.resx">
+      <DependentUpon>addstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow_Books.resx">
+      <DependentUpon>Borrow_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrow_time.resx">
+      <DependentUpon>borrow_time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change pass.resx">
+      <DependentUpon>change pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardM.resx">
+      <DependentUpon>DashboardM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboradL.resx">
+      <DependentUpon>DashboradL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBook.resx">
+      <DependentUpon>EditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editmyprofile.resx">
+      <DependentUpon>Editmyprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extend_time_lıbrarıan.resx">
+      <DependentUpon>Extend_time_lıbrarıan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="first page.resx">
+      <DependentUpon>first page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history.resx">
+      <DependentUpon>history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIBRARIAN.resx">
+      <DependentUpon>LIBRARIAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myacountmanager.resx">
+      <DependentUpon>myacountmanager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBorrowList.resx">
+      <DependentUpon>MyBorrowList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyreadingList.resx">
+      <DependentUpon>MyreadingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnBook.resx">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="send_mail.resx">
+      <DependentUpon>send_mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingUp.resx">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userslib.resx">
+      <DependentUpon>userslib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersstudent.resx">
+      <DependentUpon>usersstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
